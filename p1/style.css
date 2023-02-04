@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: #f2dda3;
+}
+.top-nav {
+    background-color: #d4ac2b;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.top-nav h1 {
+  color: #f2f2f2;
+  font-size: 47px;
+}
+.top-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.top-nav ul li a {
+    color: #f2f2f2;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.top-nav .icon {
+    display: none;
+}
+h2 {
+    font-size: 27;
+    font-weight: bold;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.panel {
+    background-color: #e6e2d8;
+    max-width: 90%;
+    min-height: 500px; /* hỏi anh Yang về cách làm cái màu xám này, khúm núm quá */
+    margin: 50px 0;
+    padding: 10px;
+    border-radius: 20px;
+}
+.post-panel {
+    /* hỏi cách căn đều 3 bông hoa  */
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* align-content: center; */
+}
+.post-name, .post-content {
+    padding: 5px;
+}
+.post-img {
+    max-width: 70%;
+    padding: 5px;
+    border-radius: 20px;
+}
+.bot-nav {
+    background-color: #333;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+}
+.transition {
+    background-color: white;
+    min-height: 30px;
+    width: 100%;
+}
+.bot-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+@media (max-width: 900px) {
+    .top-nav a {display: none;}
+    .top-nav .icon {
+      display: block;
+      color: #f2f2f2;
+      font-size: 40px;
+    }
+    .post-panel {
+        flex-direction: column;
+    }
+}
